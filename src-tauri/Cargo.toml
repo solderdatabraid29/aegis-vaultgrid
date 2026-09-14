@@ -1,0 +1,27 @@
+[package]
+name = "aegis-vaultgrid"
+version = "1.4"
+description = "Aegis CS2 cross-market terminal"
+authors = ["solderdatabraid29"]
+edition = "2021"
+
+[lib]
+name = "vaultgrid_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+tokio = { version = "1", features = ["sync", "time"] }
+hmac = "0.12"
+sha1 = "0.10"
+base64 = "0.22"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
