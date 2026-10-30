@@ -2,7 +2,7 @@
   "name": "aegis-vaultgrid",
   "version": "1.4",
   "private": true,
-  "description": "VaultGrid Terminal pairs a CS2 inventory vault with a fee-aware order planner. Local JSON state, no ",
+  "description": "Aegis VaultGrid: local-first CS2 workspace \u2014 fee-aware spread scanner, vault access and offline Steam Guard codes on device.",
   "type": "module",
   "scripts": {
     "dev": "vite",
